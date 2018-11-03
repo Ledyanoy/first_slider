@@ -1,0 +1,8 @@
+
+.page { 
+    font-family: $font-primary;  
+    font-weight: normal;
+    &__inner {
+        margin-top: 200px;
+    }         
+}
