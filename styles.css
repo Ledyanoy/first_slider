@@ -133,18 +133,11 @@ input {
   color: #fff;
   max-width: 350px; }
 
-.slider-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 10px;
-  background-color: #eaeaea; }
-
 .slider-control__item {
   width: 20%;
   color: #b1b1b1;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 0 10px 10px;
@@ -160,6 +153,40 @@ input {
   .slider-control__item--active {
     background-color: #db711b;
     color: #fff; }
+
+.slider-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  background-color: #eaeaea; }
+  .slider-control__btns {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0; }
+  .slider-control__btn {
+    display: block;
+    width: 30px;
+    background-color: #797778;
+    height: 100%; }
+  .slider-control__pagination {
+    background-color: #626262;
+    color: #fff;
+    width: 110px;
+    text-align: center;
+    padding: 10px; }
+
+.slider-btn--prev {
+  border-right: 2px solid #9a9899; }
+
+.slider-btn--next {
+  border-left: 2px solid #9a9899; }
+
+.slider__image {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-49%);
+  top: 70px; }
 
 .cards-text {
   font-size: 22px;
