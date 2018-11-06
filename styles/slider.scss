@@ -1,4 +1,4 @@
-.slider { 
+.slider { /*амперсанд только для элементов и псевдоэлементов */
     &__item {
         width: 100%;           
         overflow: hidden;
@@ -11,7 +11,7 @@
         text-decoration: none;
         border-bottom: 1px dotted $white-color;  
     }        
-    &-card__btn {
+    &-card__btn { /*исполозовать автоперфиесер*/
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
