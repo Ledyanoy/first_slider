@@ -106,6 +106,7 @@
             width: 30px;
             background-color: $grey-button-color;
             height: 100%;
+            position: relative;
         }
 
         &__pagination {
@@ -119,10 +120,34 @@
 
     &-btn--prev {
         border-right: 2px solid $grey_btn-border;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 7px;
+            width: 7px;
+            border-left: 2px solid $white-color;
+            border-bottom: 2px solid $white-color;
+            transform: rotate(45deg);
+            left: 40%;
+            top: 35%;
+        }
     }
 
     &-btn--next {
         border-left: 2px solid $grey_btn-border;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 7px;
+            width: 7px;
+            border-right: 2px solid $white-color;
+            border-top: 2px solid $white-color;
+            transform: rotate(45deg);
+            right: 40%;
+            top: 35%;
+        }
     }
 
    
