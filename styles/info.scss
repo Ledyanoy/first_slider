@@ -1,0 +1,57 @@
+
+.info {
+    &__text {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 20px;       
+    }
+    &__text--name {            
+        font-weight: bold;            
+    }
+    &__link {        
+        color: $white-color;
+        text-decoration: none;
+        border-bottom: 1px dotted $white-color;          
+    }
+    &__btn {
+        /*исполозовать автоперфиесер*/
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;           
+        color: $orange-color;
+        background-color: $white-color; 
+        text-decoration: none;
+        margin-top: 50px;
+        height: 40px;
+        width: 270px;
+        font-size: 18px;
+        position: relative;
+            &::before {
+                content: '';
+                display: block;
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                background-color: $orange-color;
+                left: -25px;
+                transform: skewX(-30deg);
+            }
+            &::after {
+                content: '';
+                display: block;
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                background-color: $orange-color;
+                right: -25px;
+                transform: skewX(-30deg);
+            }     
+    }
+    
+}

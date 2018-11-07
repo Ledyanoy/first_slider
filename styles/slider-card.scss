@@ -1,0 +1,30 @@
+.slider-card { /*амперсанд только для элементов и псевдоэлементов */    
+        width: 100%;           
+        overflow: hidden;
+        background-color: $light-grey-color;
+        position: relative;
+        height: 450px;  
+
+        &__right {
+                position: absolute;
+                background-color: $orange-color;
+                width: 50%;
+                height: 450px;
+                transform: skewX(-19deg);
+                bottom: 1;            
+                right: -90px; 
+        }  
+        &__info {
+                transform: skewX(19deg);
+                margin-top: 105px;
+                margin-left: 150px;
+                color: $white-color;
+                max-width: 350px;                   
+        }  
+        &__image {
+                position: absolute;
+                left: 55%;
+                transform: translateX(-49%);
+                top: 70px;
+        }     
+} 
