@@ -109,16 +109,12 @@ input {
   text-decoration: none;
   border-bottom: 1px dotted #fff; }
 
+.info__link:hover {
+  border-bottom: none; }
+
 .info__btn {
-  /*исполозовать автоперфиесер*/
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #db711b;
   background-color: #fff;
@@ -147,38 +143,46 @@ input {
     right: -25px;
     transform: skewX(-30deg); }
 
-.slider-control {
+.info__btn:hover {
+  opacity: 0.8; }
+
+.slider-panel {
+  display: flex;
+  box-shadow: 4px 17px 82px -15px #000000; }
+
+.slider-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 10px;
-  background-color: #eaeaea; }
-  .slider-control__item {
-    width: 20%;
+  background-color: #eaeaea;
+  flex-grow: 1; }
+  .slider-pagination__item {
+    width: 25%;
     color: #b1b1b1;
     background-color: #fff;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 0 10px 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding: 15px;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start; }
-  .slider-control__item--active {
+  .slider-pagination__item--active {
     background-color: #db711b;
     color: #fff; }
+
+.slider-control {
+  display: flex; }
   .slider-control__btn {
     display: block;
     width: 30px;
     background-color: #797778;
     height: 100%;
-    position: relative; }
+    position: relative;
+    border: none;
+    cursor: pointer; }
+  .slider-control__btn:hover {
+    opacity: 0.8; }
   .slider-control__btn--prev {
     border-right: 2px solid #9a9899; }
     .slider-control__btn--prev::before {
@@ -191,7 +195,7 @@ input {
       border-bottom: 2px solid #fff;
       transform: rotate(45deg);
       left: 40%;
-      top: 35%; }
+      top: 40%; }
   .slider-control__btn--next {
     border-left: 2px solid #9a9899; }
     .slider-control__btn--next::before {
@@ -204,10 +208,10 @@ input {
       border-top: 2px solid #fff;
       transform: rotate(45deg);
       right: 40%;
-      top: 35%; }
+      top: 40%; }
   .slider-control__pagination {
     background-color: #626262;
     color: #fff;
-    width: 110px;
+    width: 100px;
     text-align: center;
-    padding: 10px; }
+    padding: 15px; }
