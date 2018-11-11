@@ -156,18 +156,25 @@ input {
   display: flex;
   background-color: #eaeaea;
   flex-grow: 1; }
-  .slider-pagination__item {
-    width: 25%;
-    color: #b1b1b1;
-    background-color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; }
-  .slider-pagination__item--active {
+
+.slider-pagination__item {
+  width: 25%; }
+
+.slider-pagination__btn {
+  border: none;
+  width: 100%;
+  background: none;
+  color: #b1b1b1;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer; }
+  .slider-pagination__btn--active {
     background-color: #db711b;
     color: #fff; }
 
