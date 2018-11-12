@@ -1,18 +1,42 @@
-const slider = Array.from(document.querySelectorAll('slider-card'));
-let currentSlider = 0;
+const slider = Array.from(document.querySelectorAll('.slider-card'));
+let currentSlide = 0;
 
 function showNext() {
-  slider[currentSlider].classList.remove(`active`);
-  currentDiv++;
-  if (divEls[currentDiv]) {
-    divEls[currentDiv].classList.add(`active`);
+  slider[currentSlide].classList.remove('slider-card--active');
+  currentSlide++;
+  if (slider[currentSlide]) {
+    slider[currentSlide].classList.add('slider-card--active');
   } else {
-    alert(`Конец`)
+    currentSlide = 0;
+    slider[currentSlide].classList.add('slider-card--active');
   }
-}
+};
 
-divEls.forEach((item) => item.onclick = (evt) => {
+function showPrev() {
+  slider[currentSlide].classList.remove('slider-card--active');
+  currentSlide--;
+  if (slider[currentSlide]) {
+    slider[currentSlide].classList.add('slider-card--active');
+  } else {
+    currentSlide = slider.length - 1;
+    slider[currentSlide].classList.add('slider-card--active');
+  }
+};
+
+let nextButton = document.querySelector('.slider-control__btn--next');
+nextButton.onclick = (evt) => {
+  showNext();
+};
+
+let prevButton = document.querySelector('.slider-control__btn--prev');
+prevButton.onclick = (evt) => {
+  showPrev();
+};
+
+console.log(slider);
+
+/*slider.forEach((item) => item.onclick = (evt) => {
   showNext();
 })
 
-divEls[currentDiv].classList.add(`active`);
+slider[currentSlide].classList.add('slider-card--active');*/

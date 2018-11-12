@@ -1,5 +1,5 @@
 {
-  "name": "pest",
+  "name": "first_slider",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ledyanoy/pest.git"
+    "url": "git+https://github.com/Ledyanoy/first_slider.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ledyanoy/pest/issues"
+    "url": "https://github.com/Ledyanoy/first_slider/issues"
   },
-  "homepage": "https://github.com/Ledyanoy/pest#readme",
+  "homepage": "https://github.com/Ledyanoy/first_slider#readme",
   "dependencies": {
     "swiper": "^4.1.0",
     "togglr": "^1.0.0"
@@ -30,7 +30,7 @@
     "browser-sync": "^2.18.13",
     "clean-css": "^4.1.9",
     "concurrently": "^3.5.1",
-    "node-sass": "^4.6.1",
+    "node-sass": "^4.10.0",
     "postcss-cli": "^4.1.1"
   }
 }

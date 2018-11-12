@@ -48,8 +48,10 @@ input {
 .page {
   font-family: "PT Sans", Arial, Georgia;
   font-weight: normal; }
-  .page__inner {
-    margin-top: 200px; }
+
+.page__inner {
+  margin-top: 200px;
+  margin-bottom: 200px; }
 
 .wrapper {
   display: block;
