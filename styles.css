@@ -75,26 +75,32 @@ input {
   overflow: hidden;
   background-color: #eaeaea;
   position: relative;
-  height: 450px; }
-  .slider-card__right {
-    position: absolute;
-    background-color: #db711b;
-    width: 50%;
-    height: 450px;
-    transform: skewX(-19deg);
-    bottom: 1;
-    right: -90px; }
-  .slider-card__info {
-    transform: skewX(19deg);
-    margin-top: 105px;
-    margin-left: 150px;
-    color: #fff;
-    max-width: 350px; }
-  .slider-card__image {
-    position: absolute;
-    left: 55%;
-    transform: translateX(-49%);
-    top: 70px; }
+  height: 450px;
+  display: none; }
+  .slider-card--active {
+    display: block; }
+
+.slider-card__right {
+  position: absolute;
+  background-color: #db711b;
+  width: 50%;
+  height: 450px;
+  transform: skewX(-19deg);
+  bottom: 1;
+  right: -90px; }
+
+.slider-card__info {
+  transform: skewX(19deg);
+  margin-top: 105px;
+  margin-left: 150px;
+  color: #fff;
+  max-width: 350px; }
+
+.slider-card__image {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-49%);
+  top: 70px; }
 
 .info__text {
   font-size: 22px;

@@ -1,8 +1,8 @@
-const divEls = Array.from(document.querySelectorAll(`div`));
-let currentDiv = 0;
+const slider = Array.from(document.querySelectorAll('slider-card'));
+let currentSlider = 0;
 
 function showNext() {
-  divEls[currentDiv].classList.remove(`active`);
+  slider[currentSlider].classList.remove(`active`);
   currentDiv++;
   if (divEls[currentDiv]) {
     divEls[currentDiv].classList.add(`active`);
