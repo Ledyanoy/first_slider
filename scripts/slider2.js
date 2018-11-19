@@ -48,8 +48,12 @@ function btnPrev() {
 
 function changeSlide(nextSlide) {
   slider[currentSlide].classList.remove(SLIDER_ACTIVE_CLASS);
+  pagination[currentSlide].classList.remove(PAGIN_ACTIVE_CLASS);
+
   currentSlide = nextSlide;
+
   slider[currentSlide].classList.add(SLIDER_ACTIVE_CLASS);
+  pagination[currentSlide].classList.add(PAGIN_ACTIVE_CLASS);
 }
 
 function changePagination(nextBtn) {
@@ -59,18 +63,33 @@ function changePagination(nextBtn) {
 }
 
 
-
 let nextButton = document.querySelector('.slider-control__btn--next');
 nextButton.onclick = function() {
-  changeSlide(showNext());
-  changePagination(btnNext());
+  changeSlide(showNext());  
 };
 
 let prevButton = document.querySelector('.slider-control__btn--prev');
 prevButton.onclick = function() {
-  changeSlide(showPrev());
-  changePagination(btnPrev());
+  changeSlide(showPrev());  
 };
+
+document.querySelector('.slider-pagination').addEventListener('click', function(evt){
+   evt.target;  
+   console.log(evt.target); 
+   if (!evt.target.classList.contains('slider-pagination__btn')) return;
+     
+   
+   for (let i = 0; i < pagination.length; i++) {
+       if (evt.target === pagination[i]) {
+        changeSlide(i);
+        break}
+     }
+    
+})
+
+
+
+
 
 
 
