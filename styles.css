@@ -84,12 +84,19 @@ input {
 
 .slider-card__right {
   position: absolute;
-  background-color: #db711b;
   width: 50%;
   height: 450px;
   transform: skewX(-19deg);
   bottom: 1;
   right: -90px; }
+  .slider-card__right--first {
+    background-color: #db711b; }
+  .slider-card__right--second {
+    background-color: blue; }
+  .slider-card__right--third {
+    background-color: green; }
+  .slider-card__right--fourth {
+    background-color: black; }
 
 .slider-card__info {
   transform: skewX(19deg);

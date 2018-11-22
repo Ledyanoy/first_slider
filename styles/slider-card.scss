@@ -10,13 +10,24 @@
         }
 }
 .slider-card__right {
-        position: absolute;
-        background-color: $orange-color;
+        position: absolute;        
         width: 50%;
         height: 450px;
         transform: skewX(-19deg);
         bottom: 1;            
         right: -90px; 
+        &--first {
+                background-color: $orange-color;
+        }
+        &--second {
+                background-color: $blue-color;
+        }
+        &--third {
+                background-color: $green-color;
+        }
+        &--fourth {
+                background-color: $black-color;
+        }
 }  
 .slider-card__info {
         transform: skewX(19deg);
