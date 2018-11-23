@@ -3,6 +3,7 @@ const pagination = Array.from(document.querySelectorAll('.slider-pagination__btn
 let currentSlide = 0;
 const SLIDER_ACTIVE_CLASS = 'slider-card--active';
 const PAGIN_ACTIVE_CLASS = 'slider-pagination__btn--active';
+const sliderNumber = document.querySelector('.current-slider-number');
 
 
 function showNext() { 
@@ -54,13 +55,8 @@ function changeSlide(nextSlide) {
   slider[currentSlide].classList.add(SLIDER_ACTIVE_CLASS);
   pagination[currentSlide].classList.add(PAGIN_ACTIVE_CLASS);
 
-  document.querySelector('.current-slider-number').innerHTML = nextSlide + 1;  
+  sliderNumber.innerText = nextSlide + 1;  
 }
-
-
-
-
-
 
 let nextButton = document.querySelector('.slider-control__btn--next');
 nextButton.onclick = function() {
@@ -75,8 +71,7 @@ prevButton.onclick = function() {
 document.querySelector('.slider-pagination').addEventListener('click', function(evt){
    evt.target;  
    console.log(evt.target); 
-   if (!evt.target.classList.contains('slider-pagination__btn')) return;
-     
+   if (!evt.target.classList.contains('slider-pagination__btn') || !evt.target.classList.closest('.slider-pagination__btn')) return;      
    
    for (let i = 0; i < pagination.length; i++) {
        if (evt.target === pagination[i]) {
